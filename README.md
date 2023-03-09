@@ -1,39 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Daddy Issues
 
-## Getting Started
+In need of a supportive father figure? Look no further! Daddy Issues AI generated father figure is available to 24/7 to listen to all your troubles. Built using openai api - text-davinci-003 model integrated with next.js. [Check it out here](https://daddy-issues.vercel.app/).
 
-First, run the development server:
+<img width="500" alt="Screenshot 2023-03-09 at 6 23 40 AM" src="https://user-images.githubusercontent.com/84835256/224022467-f6647163-3abd-46a9-8fb2-2b44f65d9a78.png">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The AI has been specified to only has answer within the scope of the character 'Father'. All other prompts will be redirected with a 'I don't know'.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<img width="500" alt="Screenshot 2023-03-09 at 6 24 30 AM" src="https://user-images.githubusercontent.com/84835256/224022482-4d1c7cf5-5196-4627-9325-267837e1a0f7.png">
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This is the structure in which the AI responds ~
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<img width="500" alt="Screenshot 2023-03-09 at 6 38 34 AM" src="https://user-images.githubusercontent.com/84835256/224025617-fc3f4066-7472-4e83-8c33-bad347a83872.png">
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# daddy-issues
+*Disclaimer:* This is meant to be taken light heartdly. If you have any mental issues, please seek professional help.
