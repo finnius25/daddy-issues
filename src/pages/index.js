@@ -78,7 +78,7 @@ export default function Home() {
             <div className="whitespace-nowrap font-bold w-20 flex justify-end px-2">
               AI Father:
             </div>
-            {result}
+            {result ? result : <div>Loading...</div>}
           </div>
         )}
       </div>
