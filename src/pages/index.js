@@ -4,11 +4,16 @@ import { motion } from "framer-motion";
 export default function Home() {
   const [promptInput, setPromptInput] = useState("");
   const [result, setResult] = useState(undefined);
-  const [youText, setYouText] = useState("");
+  const [youText, setYouText] = useState(undefined);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   async function onSubmit(e) {
     e.preventDefault();
+    setYouText(undefined);
+    setResult(undefined);
     try {
+      setLoading(true);
       const response = await fetch("/api/generate", {
         method: "POST",
         headers: {
@@ -19,12 +24,14 @@ export default function Home() {
 
       const data = await response.json();
       if (response.status !== 200) {
+        setError(true);
         throw (
           data.error ||
           new Error(`Request failed with status ${response.status}`)
         );
       }
-
+      setError(false);
+      setLoading(false);
       setResult(data.result);
       setYouText(promptInput);
       setPromptInput("");
@@ -63,7 +70,8 @@ export default function Home() {
           </form>
         </div>
       </motion.div>
-
+      {error && <div>Something went wrong. Please try again.</div>}
+      {loading && <div>Loading...</div>}
       <div className="flex flex-col gap-8 w-10/12 sm:w-6/12">
         {youText && (
           <div className="flex gap-5">
